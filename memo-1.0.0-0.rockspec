@@ -20,6 +20,6 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ['str'] = "src/memo/init.lua",
+    ['memo'] = "src/memo/init.lua",
   }
 }
