@@ -3,6 +3,13 @@ An implementation of the `memoize` technique in Lua.
 
 > In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. -- Wikipedia
 
+## Installation
+To install `memoize`, run:
+
+```sh
+$ luarocks install memoize
+```
+
 ## Usage
 ```lua
 local memoize = require('memoize')
