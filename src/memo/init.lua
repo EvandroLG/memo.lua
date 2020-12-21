@@ -3,7 +3,7 @@
 -- @param resolver_cache {function}
 -- @return {function}
 
-function memoize(fn, resolver_cache)
+function memo(fn, resolver_cache)
   local cache = {}
 
   return function(...)
@@ -22,4 +22,4 @@ function memoize(fn, resolver_cache)
   end
 end
 
-return memoize
+return memo

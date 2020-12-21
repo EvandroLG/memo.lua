@@ -1,9 +1,9 @@
 local test = require('simple_test')
-local memoize = require('memoize')
+local memo = require('memo')
 
 test('memoize with one parameter', function(a)
   local count = 0
-  local memoized_fn = memoize(function(value)
+  local memoized_fn = memo(function(value)
     count = count + 1
     return value + 1
   end)
@@ -23,7 +23,7 @@ test('memoize with two parameters', function(a)
     return value_a .. value_b
   end
 
-  local memoized_fn = memoize(function(value_a, value_b)
+  local memoized_fn = memo(function(value_a, value_b)
     count = count + 1
     return value_a + value_b
   end, resolver)
@@ -47,7 +47,7 @@ test('memoize with three parameters', function(a)
     return value_a .. value_b .. value_c
   end
 
-  local memoized_fn = memoize(function(value_a, value_b, value_c)
+  local memoized_fn = memo(function(value_a, value_b, value_c)
     count = count + 1
     return value_a + value_b + value_c
   end, resolver)
