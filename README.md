@@ -1,7 +1,7 @@
 # memoize.lua &middot; [![Build Status](https://travis-ci.org/EvandroLG/memoize.lua.svg?branch=master)](https://travis-ci.org/EvandroLG/memoize.lua) [![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
 An implementation of the `memoize` technique in Lua.
 
-> In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. -- Wikipedia
+> In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. - Wikipedia
 
 ## Installation
 To install `memoize`, run:
@@ -30,6 +30,7 @@ By default, it only uses the first parameter as the cache key, but it's possible
 
 ```lua
 local memoize = require('memoize')
+
 local sum = memoize(function(a, b)
   return a + b
 end, function(a, b)
