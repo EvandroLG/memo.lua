@@ -1,9 +1,9 @@
 package = 'memo'
-version = '1.0.0-1'
+version = '1.0.0-0'
 
 source = {
   url = 'git://github.com/evandrolg/memo.lua.git',
-  tag = 'v1.0.1'
+  tag = 'v1.0.0'
 }
 
 description = {
@@ -20,6 +20,6 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ['str'] = "src/memoize/init.lua",
+    ['str'] = "src/memo/init.lua",
   }
 }
