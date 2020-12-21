@@ -1,3 +1,8 @@
+-- Creates a function that memoizes the result of a giving function
+-- @param fn {function}
+-- @param resolver_cache {function}
+-- @return {function}
+
 function memoize(fn, resolver_cache)
   local cache = {}
 
