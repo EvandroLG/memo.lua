@@ -26,7 +26,7 @@ sum_by_one(20) -- Cache hit!
 ```
 
 ### Custom cache
-By default, it only uses the first parameter as the cache key, but it's possible to pass a custom cache be used such as the example bellow.
+By default, it only uses the first parameter as the cache key, but it's possible to pass a custom cache to be used such as the example bellow.
 
 ```lua
 local memo = require('memo')
